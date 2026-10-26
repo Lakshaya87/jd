@@ -1,0 +1,6 @@
+{
+  "name": "RADIX Talent Match — JD Analytics Backend",
+  "description": "Integration-ready Python backend module for RADIX Talent Match Role 1: JD Analytics",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
