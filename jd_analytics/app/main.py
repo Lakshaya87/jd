@@ -7,6 +7,7 @@ from pydantic import ValidationError
 
 from app import __version__
 from app.api.routes import router
+from app.api.matching_routes import matching_router
 from app.config import settings
 from app.exceptions import JDAnalyticsError
 from app.schemas import ErrorDetail, ErrorResponse
@@ -109,6 +110,7 @@ def create_application() -> FastAPI:
 
     # Mount API routes
     app.include_router(router)
+    app.include_router(matching_router)
 
     return app
 
